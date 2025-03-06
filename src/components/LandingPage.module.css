@@ -1,5 +1,141 @@
-.container{
- display: flex;
- flex-direction: column;
-   
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background: #fff;
+}
+.navMenu {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+}
+.menuContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 80%;
+}
+
+.menuContent p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  color: #191619;
+  cursor: pointer;
+}
+.menuContent button {
+  color: #0cbbc7;
+  width: 8.625rem;
+  height: 2.375rem;
+  background-color: #fff;
+  border: 2px solid #0cbbc7;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coverPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+.coverPageHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #effeff;
+  height: 70%;
+}
+.coverTopHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.coverTopHeader p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #191619;
+  text-align: center;
+}
+.coverSubHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.coverSubHeader p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 0.85rem;
+  color: #878787;
+  text-align: center;
+}
+.coverPageBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0cbbc7;
+  height: 3rem;
+  width: 10rem;
+}
+.coverPageBtnTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coverPageBtnIc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coverPageBtnIc svg {
+  color: #fff;
+  padding-top: 0.225rem;
+  font-size: 1rem;
+}
+.coverPageBtn p {
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.coverPageBottom {
+  background-color: #fff;
+  height: 30%;
+}
+.coverPageImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 2rem;
+}
+.coverCloud {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+.coverCloud img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
 }
