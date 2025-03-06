@@ -1,5 +1,6 @@
 
 import './App.css'
+import Customers from './components/Customers'
 import LandingPage from './components/LandingPage'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
      <LandingPage/>
+     <Customers/>
      
     </>
   )
