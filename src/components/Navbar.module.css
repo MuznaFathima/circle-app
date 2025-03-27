@@ -1,5 +1,5 @@
 .container {
-  width: 100vw;
+  width: 100%;
   min-height: 50px;
   padding: 15px 0;
   display: flex;
@@ -124,18 +124,24 @@
   width: 21px;
   cursor: pointer;
 }
+.greyBg {
+  background-color: #f8f6f3;
+}
+.whiteBg {
+  background-color: #fff;
+}
 
 .mobileNavbar {
   display: none;
 }
 
 @media screen and (max-width: 920px) {
-    .rightSection{
-        padding-right: 20px;
-    }
-    .leftSection{
-        padding-left: 20px;
-    }
+  .rightSection {
+    padding-right: 20px;
+  }
+  .leftSection {
+    padding-left: 20px;
+  }
   .navMenu {
     display: none;
   }
@@ -199,7 +205,6 @@
   }
 }
 @media screen and (max-width: 544px) {
- 
   .navBarGrid {
     gap: 5px;
   }
@@ -209,7 +214,6 @@
   .rightSection {
     padding-right: 10px;
     justify-content: center;
-   
   }
   .siteLogo {
     padding: 0;
