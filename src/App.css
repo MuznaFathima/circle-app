@@ -4,3 +4,9 @@
 *::after {
   box-sizing: border-box;
 }
+
+/* .root{
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font:"Merriweather", serif;
+
+} */
