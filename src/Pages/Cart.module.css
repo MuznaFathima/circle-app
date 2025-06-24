@@ -1,0 +1,185 @@
+.cart {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #f8f6f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+.header p {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: "Merriweather", serif;
+  color: #111111;
+  margin: 0;
+  padding-left: 5rem;
+}
+.productTable {
+  padding: 1rem 5rem;
+}
+.productTable table {
+  width: 100%;
+  padding: 0;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+}
+.productTable thead {
+  background-color: #fff;
+  border-bottom: 1px solid #dddddd;
+}
+.productTable th {
+  padding: 1rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #333333;
+  width: 15%;
+  text-align: left;
+}
+.productTable tr {
+  border-bottom: 1px solid #dddddd;
+}
+.productTable th:nth-child(3) {
+  width: 28%;
+}
+.productTable th:nth-child(1) {
+  width: 12%;
+}
+.productTable td {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333333;
+  padding-left: 0.5rem;
+}
+.productTable td:nth-child(3) {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #8bc34a;
+  padding-left: 0;
+}
+.itemImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.productTable img {
+  width: 75px;
+  height: 75px;
+}
+.closeBtn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closeBtn svg {
+  width: 24px;
+  height: 24px;
+  color: gray;
+}
+.totalBox {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+.totalBox input {
+  width: 70px;
+  height: 40px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  color: #666;
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+.totalTable {
+  width: 100%;
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ttBox {
+  width: 600px;
+  height: 200px;
+  border: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+}
+.ttBoxHeader {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+}
+.ttBoxHeader p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19.2px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #111111;
+}
+.ttValue {
+  width: 100%;
+  display: flex;
+  padding: 1rem 3rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd;
+}
+.ttValue p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #333;
+}
+.ttBoxBtn {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.ttBoxBtn button {
+  width: 550px;
+  height: 55px;
+  color: #fff;
+  background: #6a9739;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 600;
+  
+}
+.ttBoxBtn button:hover {
+  background: #8bc34a;
+}

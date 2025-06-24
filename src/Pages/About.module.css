@@ -1,0 +1,385 @@
+.About {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f6f3;
+}
+.header p {
+  font-family: "Merriweather", serif;
+  font-size: 52px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #111111;
+}
+
+.aboutUs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f6f3 100%);
+  z-index: 1;
+}
+.aboutUs::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/assets/leafBack.png);
+  background-repeat: no-repeat;
+  background-size: 33% auto;
+  background-position: bottom left;
+  opacity: 0.1;
+  transform: scaleX(-1);
+}
+.topContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+.logoImage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.topContent {
+  width: 100%;
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  justify-content: center;
+}
+.leftContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+.rightContent {
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+  padding: 3rem;
+}
+.contentHeader {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+}
+.contentHeader p {
+  font-family: "Merriweather", serif;
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+  margin-top: 2rem;
+}
+.content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+  text-align: left;
+  margin-top: 2rem;
+}
+.rightContent img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.badge {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #111111;
+  padding: 30px 20px;
+  justify-content: space-around;
+}
+.badgeItem {
+  width: 285px;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgeItem p:nth-child(1) {
+  font-family: "Open Sans", sans-serif;
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+.badgeItem p:nth-child(2) {
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  line-height: 2.5;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+}
+.bottomContent {
+  display: flex;
+  width: 100%;
+}
+.slides {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.certificate {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 3rem;
+  justify-content: center;
+}
+.certificateBadge {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.certificateImg {
+  width: 194px;
+  height: 153px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.certificateImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.certificateTxt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.certificateTxt p {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #111111;
+  margin: 0;
+  font-weight: 700;
+}
+.certificateTxt p:nth-child(2) {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333333;
+  margin-top: 1rem;
+}
+.certificateHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.certificateHeader p {
+  font-family: "Merriweather", serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #111111;
+  margin: 0;
+}
+.leafLogo {
+  width: 75px;
+  height: 33px;
+  margin: 2rem 0;
+}
+.leafLogo img {
+  width: 100%;
+  height: 100%;
+}
+.tickContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.tickContent svg {
+  color: #8bc34a;
+  width: 17px;
+  height: 17px;
+  margin-right: 0.5rem;
+}
+.tickContent span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #111111;
+  margin: 0;
+}
+.shopBtn {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 215px;
+  margin-top: 2rem;
+}
+.shopBtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #6a9739;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff;
+  gap: 12px;
+  padding: 17px 34px;
+}
+.shopBtn button:hover {
+  background-color: #8bc34a;
+}
+.shopBtn svg {
+  width: 17px;
+  height: 17px;
+}
+.shopBtn span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 600;
+}
+.slidesBox{
+  display: flex;
+  background-color: #f8f6f3;
+  height: 772px;
+  width: 538px;
+  border-radius: 8px;
+  margin-top: 10rem;
+  padding: 115px 40px;
+  align-items:end;
+
+}
+.slidesImage{
+width: 450px;
+height: 500px;
+display: flex;
+align-items: center;
+position: absolute;
+top: 10%;
+
+}
+.slidesImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.testimony{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+ 
+ 
+}
+.testimony p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #111111;
+  font-weight: 500;
+  text-align: center;
+
+}
+.starContainer{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.starContainer svg{
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  color: #ffd700;
+}
+@media screen and (max-width:920px) {
+  
+   .topContent{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .rightContent{
+    width: 100%;
+  }
+  .leftContent{
+    width: 100%;
+  }
+  .badge{
+    flex-direction: column;
+  }
+  .bottomContent{
+    flex-direction: column;
+  }
+  .slides{
+    width: 100%;
+  }
+  .certificate{
+    width: 100%;
+    align-items: center;
+  }
+  .certificateBadge{
+    flex-direction: column;
+  }
+  .certificateTxt p{
+    text-align: center;
+  }
+  .certificateHeader p{
+    text-align: center;
+  }
+  .tickContent{
+    justify-content: center;
+  }
+  .slidesImage{
+    width: 300px;
+    height: 300px;
+  }
+  .slidesBox{
+    margin-top: 1rem;
+  }
+
+}
+@media screen and (max-width:544px) {
+
+}
