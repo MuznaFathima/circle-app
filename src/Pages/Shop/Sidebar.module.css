@@ -45,6 +45,8 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
+
+
 .search svg {
   color: #fff;
   width: 16px;
@@ -120,4 +122,22 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 2;
+}
+
+@media screen and (max-width:920px) {
+.search input{
+
+    width: 100%;
+}
+.filterHeader{
+    padding-left: 0;
+}
+.rangeSlider{
+  padding: 0.5rem 0;
+}
+.priceBox{
+  margin-top: 4px;
+  justify-content: center;
+  gap: 2rem;
+}
 }

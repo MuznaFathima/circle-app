@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./About.module.css";
 import floatingImg from "../assets/basil-leaf.png";
 import bannerImg from "../assets/aboutUs.jpg";
@@ -54,7 +54,7 @@ const About = () => {
                     While customers struggle to find authentic Organic, Natural,
                     Gluten free, Non-GMO products, we hunt for the most
                     authentic, strictly tested & certified products for our
-                    customers. With increasing customer''s awareness and
+                    customers. With increasing customer&apos;s awareness and
                     interest for health conscious food, Organic store is a one
                     stop solution for all their such needs.
                     <br />

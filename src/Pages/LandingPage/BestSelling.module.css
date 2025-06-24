@@ -21,7 +21,7 @@
 }
 .title p {
   color: #111111;
-  font-size: 34px;
+  font-size: var(--fs-500);
   line-height: 1.3;
   font-family: "Merriweather", serif;
   font-weight: 700;
@@ -82,14 +82,14 @@
 
 .category p {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: var(--fs-400);
   line-height: 1.3;
   color: #333333;
   font-weight: 400;
 }
 .name p {
   color: #111111;
-  font-size: 16px;
+  font-size: var(--fs-400);
   line-height: 21px;
   font-family: "Merriweather", serif;
   font-weight: 600;
@@ -101,7 +101,7 @@
 }
 .price {
   color: #333333;
-  font-size: 14.4px;
+  font-size: var(--fs-400);
   line-height: 1.3;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -131,7 +131,7 @@
 .counterBox span {
   font-weight: 400;
   color: #333333;
-  font-size: 15px;
+  font-size: var(--fs-400);
 }
 .cartButton {
   height: 35px;
@@ -153,4 +153,27 @@
   color: #fff;
   height: 16px;
   width: 16px;
+}
+@media screen and (max-width:1400px) {
+  .products{
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 920px) {
+ 
+  .products{
+    grid-template-columns: repeat(2,1fr);
+  
+  }
+}
+@media screen and (max-width: 544px) {
+  .title{
+    text-align: center;
+  }
+.products{
+   grid-template-columns: 1fr;
+}
+
+
 }

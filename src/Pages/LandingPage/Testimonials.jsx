@@ -1,7 +1,7 @@
-import React from "react";
+
 import style from "./Testimonials.module.css";
 import logoImg from "../../assets/logo_leaf.png";
-import logoImg2 from "../../assets/leafBack.png";
+// import logoImg2 from "../../assets/leafBack.png";
 import { FaStar } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 

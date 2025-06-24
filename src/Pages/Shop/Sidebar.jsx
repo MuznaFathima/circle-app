@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import style from "./Sidebar.module.css";
 import { FaChevronRight } from "react-icons/fa";
 import { Slider } from "@mui/material";
 
-const Sidebar = () => {
+const Sidebar = ({ search }) => {
+  // states
+  const [searchInput, setSearchInput] = useState("");
   const [value, setValue] = useState([20, 80]);
 
   const handleSliderChange = (event, newValue) => {
@@ -13,9 +15,13 @@ const Sidebar = () => {
     <div className={style.container}>
       <div className={style.sidebar}>
         <div className={style.search}>
-          <input type="text" placeholder="Search Products..." />
+          <input
+            type="text"
+            placeholder="Search Products..."
+            onChange={(e) => setSearchInput(e.target.value)}
+          />
 
-          <button>
+          <button onClick={() => search(searchInput)}>
             <FaChevronRight />
           </button>
         </div>

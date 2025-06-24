@@ -14,8 +14,8 @@
   }
   .header p {
     font-family: "Merriweather", serif;
-    font-size: 52px;
-    line-height: 1.4;
+    font-size: var(--fs-xl);
+    line-height: var(--lh-500);
     font-weight: 700;
     color: #111111;
   }
@@ -112,9 +112,9 @@
     justify-content: center;
   }
   .contactText p {
-    font-size: 16px;
+    font-size: var(--fs-400);
     font-weight: 400;
-    line-height: 1.6;
+    line-height: var(--lh-600);
     font-family: "Open Sans", sans-serif;
     color: #333333;
     text-align: center;
@@ -123,7 +123,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-  
     padding-top: 25rem;
     align-items: center;
   }
@@ -197,3 +196,34 @@
     color: #333333;
   }
   
+  @media screen and (max-width:920px) {
+    .header{
+      height: 25rem;
+    }
+    .contacts{
+      flex-direction: column;
+      padding-top: 1rem;
+    }
+     .floatingContainer{
+      width: 100%;
+      height: auto;
+    }
+     .Faq{
+      grid-template-columns: 1fr;
+      padding: 5rem 1rem 5rem 1rem;
+    }
+    .questionBox{
+      padding-top: 42rem;
+    }
+  }
+  @media screen and (max-width:544px) {
+    .header{
+      height: 18rem;
+    }
+    .logoImage{
+      width: 100px;
+      height: 45px;
+    }
+   
+   
+  }

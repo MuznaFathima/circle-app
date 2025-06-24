@@ -40,8 +40,8 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: var(--fs-400);
+  line-height: var(--lh-600);
 }
 .secondarySection,
 .ternarySection,
@@ -58,9 +58,9 @@
 }
 .headerText h4 {
   color: #ffffff;
-  font-size: 22px;
+  font-size: var(--fs-400);
   font-family: "Merriweather", serif;
-  line-height: 16px;
+  line-height: var(--lh-500);
   font-weight: 700;
 }
 .ulLinks {
@@ -88,8 +88,8 @@
 .subtitle p {
   color: #f8f6f3;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  line-height: 26px;
+  font-size: var(--fs-400);
+  line-height: var(--lh-xl);
   font-weight: 400;
 }
 
@@ -115,9 +115,7 @@
 }
 .gridBox {
   width: 100%;
-  display: grid;
-  grid-template-columns:repeat(4, 1fr);
-  gap: 1rem;
+  display: flex;
 }
 .footerContent {
   display: flex;
@@ -125,11 +123,14 @@
   height: 3rem;
   width: 100%;
 }
+.footerContent:last-child {
+  justify-content: flex-end;
+}
 .footerContent p {
   color: #f8f6f3;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: var(--fs-400);
+  line-height: var(--lh-600);
   padding-left: 2rem;
 }
 .footerContent ul {
@@ -149,7 +150,33 @@
 }
 
 @media screen and (max-width: 920px) {
-
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .secondarySection {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .headerText {
+    justify-content: center;
+  }
+  .subtitle {
+    text-align: center;
+    width: 100%;
+  }
+  .listSection {
+    width: 100%;
+    text-align: center;
+  }
+  .StoreBanner {
+    justify-content: center;
+  }
+  .gridBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logoText {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 544px) {
   .container {
@@ -161,9 +188,7 @@
   .logoText p {
     text-align: center;
   }
-  .headerText p{
-    font-size: 18px;
-  }
+
   .headerText,
   .StoreBanner,
   .footerContent {
@@ -176,7 +201,8 @@
   .listSection ul {
     text-align: center;
   }
-  .listSection li,.footerContent li{
+  .listSection li,
+  .footerContent li {
     font-size: 12px;
   }
   .subtitle {
@@ -185,13 +211,4 @@
     text-align: center;
     padding: 0 2rem;
   }
-.subtitle p{
-  font-size: 14px;
 }
-  .gridBox {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-}
-

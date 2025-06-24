@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import style from "./Navbar.module.css";
 import logo from "../assets/Logo.png";
 import { MdOutlineShoppingBag } from "react-icons/md";
@@ -11,26 +11,29 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 
 const Navbar = () => {
   const location = useLocation();
-  const navigate =useNavigate();
+  const navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
-  const [cartOpen, setCartOpen] = useState(true);
+  const [cartOpen, setCartOpen] = useState(false);
 
   const mobileNavbarView = () => {
     setIsOpen(!isOpen);
   };
 
   const toggleCartVisibility = () => {
-    setCartOpen(!cartOpen);
+    if (location.pathname === "/cart" || location.pathname === "/checkout") {
+      setCartOpen(false);
+    } else {
+      setCartOpen(!cartOpen);
+    }
   };
 
-  const handleViewCart=()=>{
-    navigate("/cart")
-    setCartOpen(false)
-  
-  }
+  const handleViewCart = () => {
+    navigate("/cart");
+    setCartOpen(false);
+  };
   // products array
-  const productsList = BandP.slice(0,4);
+  const productsList = BandP.slice(0, 4);
   console.log(productsList);
   // background color according to path
   const navClass =
@@ -76,13 +79,13 @@ const Navbar = () => {
                 </Link>
               </div>
               <div className={style.navMenu}>
-                <Link to="/shop" className={style.navLink}>
+                <Link to="/shop/everything" className={style.navLink}>
                   <p>Everything</p>
                 </Link>
-                <Link to="/shop" className={style.navLink}>
+                <Link to="/shop/Groceries" className={style.navLink}>
                   <p>Groceries</p>
                 </Link>
-                <Link to="/shop" className={style.navLink}>
+                <Link to="/shop/Beauty&Personal Care" className={style.navLink}>
                   <p>Beauty & Personal Care</p>
                 </Link>
               </div>
@@ -125,18 +128,18 @@ const Navbar = () => {
               <FaUser />
             </div>
             <div className={style.navMenuMb}>
-              <Link to="/shop" className={style.navLink}>
+              <Link to="/shop/everything" className={style.navLink}>
                 <p>Everything</p>
               </Link>
             </div>
             <div className={style.navMenuMb}>
-              <Link to="/shop" className={style.navLink}>
+              <Link to="/shop/Groceries" className={style.navLink}>
                 <p>Groceries</p>
               </Link>
             </div>
             <div className={style.navMenuMb}>
-              <Link to="/shop" className={style.navLink}>
-                <p>Juice</p>
+              <Link to="/shop/Beauty&Personal Care" className={style.navLink}>
+                <p>Beauty&Personal Care</p>
               </Link>
             </div>
             <div className={style.navMenuMb}>
@@ -210,7 +213,7 @@ const Navbar = () => {
                   <p>$ 25.00</p>
                 </div>
                 <div className={style.buttonGrp}>
-                <button onClick={handleViewCart}>VIEW CART</button>
+                  <button onClick={handleViewCart}>VIEW CART</button>
                   <button>CHECKOUT</button>
                 </div>
               </div>

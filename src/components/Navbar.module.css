@@ -40,10 +40,9 @@
 }
 .navMenu p {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1.1rem;
+  font-size: var(--fs-400);
   padding: 0 20px;
   color: #333333;
-
   font-weight: 300;
   cursor: pointer;
 }
@@ -68,7 +67,7 @@
 }
 .cartLeft p {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1.1rem;
+  font-size: var(--fs-500);
   color: #8bc34a;
   font-weight: 600;
 }
@@ -136,10 +135,9 @@
   display: none;
 }
 .cart {
-  position: absolute;
+  position: fixed;
   width: 35vw;
-  height: 100vh;
-
+  height: var(--app-height);
   right: 0;
   top: 0;
   z-index: 1000;
@@ -168,8 +166,8 @@
   align-items: center;
 }
 .cartTitle p {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: var(--fs-400);
+  line-height: var(--lh-500);
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -207,7 +205,6 @@
 .cartButtons button,
 .buttonGrp button {
   width: 100%;
-  width: 480px;
   height: 48px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -237,8 +234,8 @@
 .subTotal p {
   color: #111111;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: var(--fs-500);
+  line-height: var(--lh-500);
   font-weight: 500;
   margin: 0;
 }
@@ -282,7 +279,7 @@
   align-items: center;
   padding: 1rem 0;
 }
-.lastCard{
+.lastCard {
   border-bottom: none;
 }
 .productImg {
@@ -309,9 +306,9 @@
 .DetailLeft p {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: var(--fs-400);
   font-weight: 500;
-  line-height: 1.5;
+  line-height: var(--lh-600);
   color: #111111;
 }
 .countPrice {
@@ -321,9 +318,9 @@
 .countPrice p {
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: var(--fs-400);
   font-weight: 400;
-  line-height: 1.5;
+  line-height: var(--lh-600);
   color: #333333;
 }
 .countPrice span {
@@ -382,6 +379,7 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    z-index: 9999;
   }
 
   .closeBar {
@@ -409,9 +407,12 @@
     border-bottom: 1px solid #dddddd;
   }
   .navMenuMb p {
-    font-size: 1rem;
+    font-size: var(--fs-500);
     font-family: "Merriweather Sans", sans-serif;
     color: #333333;
+  }
+  .cart {
+    width: 70vw;
   }
 }
 
@@ -429,5 +430,8 @@
   .siteLogo {
     padding: 0;
     width: 155px;
+  }
+  .cart {
+    width: 90vw;
   }
 }

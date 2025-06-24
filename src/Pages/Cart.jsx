@@ -1,7 +1,8 @@
-import React from "react";
+
 import style from "./Cart.module.css";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { BandP } from "../Data/data";
+import { Link } from "react-router-dom";
 
 const cartItems = BandP.length>0?BandP.slice(1, 7):[];
 
@@ -26,7 +27,7 @@ const Cart = () => {
           <tbody>
             {cartItems &&
               cartItems.map((item, i) => (
-                <tr>
+                <tr key={i}>
                   <td>
                     <div className={style.closeBtn}>
                       <IoIosCloseCircleOutline />
@@ -61,7 +62,7 @@ const Cart = () => {
                 <p>$345</p>
             </div>
             <div className={style.ttBoxBtn}>
-                <button>PROCEED TO CHECKOUT</button>
+              <Link to="/checkout">  <button>PROCEED TO CHECKOUT</button></Link>
             </div>
         </div>
       </div>

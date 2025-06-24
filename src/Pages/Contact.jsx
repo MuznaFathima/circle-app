@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import style from "./Contact.module.css";
 import floatingImg from "../assets/basil-leaf.png";
 import { FaPhone } from "react-icons/fa";

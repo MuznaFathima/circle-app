@@ -334,3 +334,52 @@ top: 10%;
   margin-right: 5px;
   color: #ffd700;
 }
+@media screen and (max-width:920px) {
+  
+   .topContent{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .rightContent{
+    width: 100%;
+  }
+  .leftContent{
+    width: 100%;
+  }
+  .badge{
+    flex-direction: column;
+  }
+  .bottomContent{
+    flex-direction: column;
+  }
+  .slides{
+    width: 100%;
+  }
+  .certificate{
+    width: 100%;
+    align-items: center;
+  }
+  .certificateBadge{
+    flex-direction: column;
+  }
+  .certificateTxt p{
+    text-align: center;
+  }
+  .certificateHeader p{
+    text-align: center;
+  }
+  .tickContent{
+    justify-content: center;
+  }
+  .slidesImage{
+    width: 300px;
+    height: 300px;
+  }
+  .slidesBox{
+    margin-top: 1rem;
+  }
+
+}
+@media screen and (max-width:544px) {
+
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./footer.module.css";
 import logo from "../assets/White_Logo.png";
 import { Link } from "react-router-dom";
@@ -82,7 +81,7 @@ const Footer = () => {
               <ul>
                 <li>Know More About Us</li>
                 <li>Visit Store</li>
-                <li>Let's Connect</li>
+                <li>{"Let's Connect"}</li>
                 <li>Locate Stores</li>
               </ul>
             </div>
@@ -102,13 +101,18 @@ const Footer = () => {
           <div className={style.footerContent}>
             <p>Copyright © 2025 | Organic Store</p>
           </div>
-          <div className={style.footerContent}></div>
-          <div className={style.footerContent}></div>
+
           <div className={style.footerContent}>
             <ul>
-              <li><FaFacebook /></li>
-              <li><FaXTwitter /></li>
-              <li><FaInstagram /></li>
+              <li>
+                <FaFacebook />
+              </li>
+              <li>
+                <FaXTwitter />
+              </li>
+              <li>
+                <FaInstagram />
+              </li>
             </ul>
           </div>
         </div>

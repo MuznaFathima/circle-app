@@ -1,4 +1,4 @@
-import React from "react";
+
 import style from "./Badge.module.css";
 import floatingImg from "../../assets/basil-leaf.png";
 import { FaArrowRight } from "react-icons/fa";
@@ -6,8 +6,10 @@ import { FaTruck } from "react-icons/fa";
 import { BiSolidContact } from "react-icons/bi";
 import { FaMoneyBillAlt } from "react-icons/fa";
 import { FaRecycle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Badge = () => {
+  const navigate=useNavigate()
   return (
     <div className={style.BadgeSection}>
       <div className={style.logoImage}>
@@ -25,7 +27,7 @@ const Badge = () => {
             </p>
           </div>
           <div className={style.shopBtn}>
-            <button>
+            <button onClick={()=>navigate("/shop/fruits&veg")}>
               <span>SHOP NOW</span> <FaArrowRight />
             </button>
           </div>
@@ -41,7 +43,7 @@ const Badge = () => {
             </p>
           </div>
           <div className={style.shopBtn}>
-            <button>
+            <button onClick={()=>navigate("/shop/bakery&breakfast")}>
               <span>SHOP NOW</span> <FaArrowRight />
             </button>
           </div>
@@ -57,7 +59,7 @@ const Badge = () => {
             </p>
           </div>
           <div className={style.shopBtn}>
-            <button>
+            <button onClick={()=>navigate("/shop/Beauty&Personal Care")}>
               <span>SHOP NOW</span> <FaArrowRight />
             </button>
           </div>

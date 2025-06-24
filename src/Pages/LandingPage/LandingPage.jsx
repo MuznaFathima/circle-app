@@ -1,4 +1,4 @@
-import React from "react";
+
 import HeroSection from "./HeroSection";
 import BestSelling from "./BestSelling";
 import TrendingProducts from "./TrendingProducts";

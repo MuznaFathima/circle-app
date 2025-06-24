@@ -4,9 +4,32 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --fs-xl: 3rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
 
-/* .root{
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font:"Merriweather", serif;
+  --btn-xl: 1rem;
+  --btn-400: 0.85rem;
 
-} */
+  --lh-xl: 1.8;
+  --lh-600: 1.4;
+  --lh-500: 1.2;
+}
+
+@media screen and (max-width: 544px) {
+  :root {
+    --fs-xl: 1.5rem;
+    --fs-600: 1.25rem;
+    --fs-500: 1rem;
+    --fs-400: 0.85rem;
+
+    --btn-xl: 0.85rem;
+    --btn-400: 0.5rem;
+
+    --lh-xl: 1.6;
+    --lh-600: 1.2;
+    --lh-500: 1;
+  }
+}
